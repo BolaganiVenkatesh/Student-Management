@@ -45,27 +45,7 @@ student-management/
 
 
 
-Update application.properties
-properties
-
-spring.datasource.url=jdbc:mysql://localhost:3306/studentdb
-spring.datasource.username=root
-spring.datasource.password=6771
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
 
 
-🧪 Run the Application
 
-./mvnw spring-boot:run
-
-
-📫 API Endpoints (Base URL: http://localhost:8080/api/students)
-Method	Endpoint	  Description
-POST	    /	        Create/Register student
-GET	      /	        Get all students
-GET	    /{id}	      Get student by ID
-PUT	    /{id}	      Update student
-DELETE	  /{id}	     Delete student
 
