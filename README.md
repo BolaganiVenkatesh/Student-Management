@@ -30,3 +30,42 @@ This is a simple **CRUD RESTful API** built using **Spring Boot**, **Spring Data
 
 ## 🏗️ Project Structure
 
+student-management/
+├── controller/
+│ └── StudentController.java
+├── model/
+│ └── Student.java
+├── repository/
+│ └── StudentRepository.java
+├── service/
+│ ├── StudentService.java
+│ └── StudentServiceImpl.java
+├── StudentManagementApplication.java
+└── application.properties
+
+
+
+Update application.properties
+properties
+
+spring.datasource.url=jdbc:mysql://localhost:3306/studentdb
+spring.datasource.username=root
+spring.datasource.password=6771
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+
+🧪 Run the Application
+
+./mvnw spring-boot:run
+
+
+📫 API Endpoints (Base URL: http://localhost:8080/api/students)
+Method	Endpoint	  Description
+POST	    /	        Create/Register student
+GET	      /	        Get all students
+GET	    /{id}	      Get student by ID
+PUT	    /{id}	      Update student
+DELETE	  /{id}	     Delete student
+
